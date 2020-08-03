@@ -71,8 +71,8 @@ def test_if_string_exists_and_Update(file_name, StringToBeDelted, New_Updateted_
         print("Text Updated.\n")
 
     else:
-        print("Text does not exsist in file, program exit.\n")
-        exit()
+        print("*********Text does not exsist in file, program exit.*************\n")
+        
 
 
 if __name__ == "__main__":
@@ -80,28 +80,25 @@ if __name__ == "__main__":
     # input("Enter file name to be Updated or press * for whole files in folder:")
     File_Name = "*"
     # input("Enter the string you want to Update:")
-    StringToBeDelted = '''<form action="/search" class="search">
-     <fieldset>
-      <legend>
-       חיפוש באתר
-      </legend>
-      <input name="q" type="text" value=""/>
-      <input type="submit" value=""/>
-     </fieldset>
-    </form>'''
+    StringToBeDelted = '''<div class="frames">
+     <strong>
+      הצעות אטרקטיביות
+     </strong>
+     <span class="f">
+     </span>
+    </div>'''
     # input("Enter the new string:")
-    New_Updateted_String = ''' <!--
-    <form action="/search" class="search">
-     <fieldset>
-      <legend>
-       חיפוש באתר
-      </legend>
-      <input name="q" type="text" value=""/>
-      <input type="submit" value=""/>
-     </fieldset>
-    </form>
-    -->
-    '''
+    New_Updateted_String = '''
+    <!--
+    <div class="frames">
+        <strong>
+          הצעות אטרקטיביות
+        </strong>
+        <span class="f">
+        </span>
+      </div>
+  -->
+'''
 
     Update(File_Name, StringToBeDelted, New_Updateted_String)
 
@@ -139,7 +136,25 @@ if __name__ == "__main__":
 
 ----Target 3: Delete הצעות אטרקטיביות baget----
 
+<div class="frames">
+        <strong>
+          הצעות אטרקטיביות
+        </strong>
+        <span class="f">
+        </span>
+      </div>
+
 ----Target 4: Delte סמסייט baget----
+'''<div class="credit">
+     נבנה ע״י
+     <a class="smsite" href="http://www.smsite.co.il/בניית_אתרים" rel="external" title="בניית אתרים">
+      בניית אתרים
+     </a>
+     <a href="http://www.smsite.co.il" rel="external" title="פתרונות אינטרנט">
+      פתרונות אינטרנט
+     </a>
+    </div>
+'''
 
 ----Target 4: Delte  hiden frame Code----
 
@@ -148,6 +163,13 @@ if __name__ == "__main__":
 ----Target 5: Update all the Top menu Links----
 
 ----Target 6: Update all the Right menu Links----
+
+----Target 7: Delete unrelvent iframe and popunder script----
+
+<iframe frameborder="0" id="hidden_iframe" name="hidden_iframe" scrolling="no" src="">
+  </iframe>
+  <script charset="utf-8" src="//deals.nadlandeal.co.il/popunder.asp" type="text/javascript">
+  </script>
 
 
 """
