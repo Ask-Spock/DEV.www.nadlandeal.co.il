@@ -158,6 +158,10 @@ if __name__ == "__main__":
 
 ----Target 4: Delte  hiden frame Code----
 
+<iframe frameborder="0" id="hidden_iframe" name="hidden_iframe" scrolling="no" src="">
+  </iframe>
+  <script charset="utf-8" src="//deals.nadlandeal.co.il/popunder.asp" type="text/javascript">
+  </script>
 
 
 ----Target 5: Update all the Top menu Links----
